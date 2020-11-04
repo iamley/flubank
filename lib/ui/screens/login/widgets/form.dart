@@ -1,5 +1,5 @@
-import 'package:flubank/ui/shared/constants.dart';
 import 'package:flubank/ui/screens/home/home_screen.dart';
+import 'package:flubank/ui/shared/constants.dart';
 import 'package:flubank/ui/widgets/default_button.dart';
 import 'package:flubank/ui/widgets/form_errors.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ class _LoginFormState extends State<LoginForm> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           _emailInput(),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           _passwordInput(),
           const SizedBox(height: 20),
           FormErrors(errors: errors),
@@ -38,7 +38,7 @@ class _LoginFormState extends State<LoginForm> {
               }
             },
           ),
-          SizedBox(height: 40),
+          const SizedBox(height: 20),
           CheckboxListTile(
             checkColor: AppColors.mainColor,
             // activeColor: AppColors.mainColor,
