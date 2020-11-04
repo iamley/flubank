@@ -1,4 +1,3 @@
-import 'package:flubank/ui/shared/constants.dart';
 import 'package:flubank/ui/screens/login/widgets/content.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,10 @@ class LoginScreen extends StatelessWidget {
         ),
         title: Text('Inicio de sesión'),
       ),
-      body: LoginScreenContent(),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: LoginScreenContent(),
+      ),
     );
   }
 }
