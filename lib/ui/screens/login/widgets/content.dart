@@ -1,4 +1,4 @@
-import 'package:flubank/screens/login/widgets/form.dart';
+import 'package:flubank/ui/screens/login/widgets/form.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreenContent extends StatelessWidget {

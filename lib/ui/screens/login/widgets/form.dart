@@ -1,10 +1,8 @@
-import 'package:flubank/constants.dart';
-import 'package:flubank/screens/home/home_screen.dart';
-import 'package:flubank/widgets/default_button.dart';
-import 'package:flubank/widgets/form_errors.dart';
+import 'package:flubank/ui/shared/constants.dart';
+import 'package:flubank/ui/screens/home/home_screen.dart';
+import 'package:flubank/ui/widgets/default_button.dart';
+import 'package:flubank/ui/widgets/form_errors.dart';
 import 'package:flutter/material.dart';
-
-import '../../../constants.dart';
 
 class LoginForm extends StatefulWidget {
   LoginForm({Key key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../api/mock/splash_data.dart';
-import '../../../constants.dart';
+import 'package:flubank/core/api/mock/splash_data.dart';
+import 'package:flubank/ui/shared/constants.dart';
 import '../../../widgets/default_button.dart';
 import '../../login/login_screen.dart';
 import 'splash_content.dart';

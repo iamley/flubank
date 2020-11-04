@@ -1,5 +1,5 @@
-import 'package:flubank/constants.dart';
-import 'package:flubank/screens/login/widgets/content.dart';
+import 'package:flubank/ui/shared/constants.dart';
+import 'package:flubank/ui/screens/login/widgets/content.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {

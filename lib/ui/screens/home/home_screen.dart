@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import 'package:flubank/ui/shared/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   static String routeName = 'homeScreen';
