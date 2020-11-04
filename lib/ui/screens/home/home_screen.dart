@@ -11,27 +11,40 @@ class HomeScreen extends StatelessWidget {
       drawer: Drawer(),
       appBar: AppBar(
         title: Text('Inicio'),
+        // bottom: PreferredSize(
+        //   child: RaisedButton(
+        //     color: AppColors.mainColor,
+        //     child: Text(
+        //       'Cerrar cesión',
+        //       style: TextStyle(color: Colors.white),
+        //     ),
+        //     onPressed: () {
+        //       Navigator.pop(context);
+        //     },
+        //   ),
+        //   preferredSize: Size.fromHeight(1.0),
+        // ),
       ),
-      body: Container(
-        width: double.infinity,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('FluBank'),
-            RaisedButton(
-              color: AppColors.mainColor,
-              child: Text(
-                'Cerrar cesión',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        ),
+      body: ListView(
+        children: <Widget>[miCard()],
       ),
     );
   }
+}
+
+Card miCard() {
+  return Card(
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+    margin: EdgeInsets.all(15),
+    elevation: 10,
+    child: Column(
+      children: <Widget>[
+        ListTile(
+          contentPadding: EdgeInsets.fromLTRB(15, 10, 25, 0),
+          title: Text('Hola Leidy,'),
+          subtitle: Text('Este es tu saldo disponible:'),
+        ),
+      ],
+    ),
+  );
 }

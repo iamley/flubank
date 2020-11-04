@@ -20,10 +20,6 @@ class SplashContent extends StatelessWidget {
           'FluBank',
           style: TextStyle(
             fontSize: 40,
-<<<<<<< HEAD:lib/ui/screens/splash/widgets/splash_content.dart
-            //color: Theme.of(context).canvasColor,
-=======
->>>>>>> f44785bdcfe57961b780590c74d69105fad895e6:lib/screens/splash/widgets/splash_content.dart
             color: AppColors.mainColor,
             fontWeight: FontWeight.bold,
           ),
