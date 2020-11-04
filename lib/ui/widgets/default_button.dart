@@ -13,8 +13,8 @@ class AppDefaulButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 50,
       child: FlatButton(
+        height: 50,
         onPressed: onTap,
         color: AppColors.mainColor,
         shape: RoundedRectangleBorder(

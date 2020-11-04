@@ -9,29 +9,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _loginScreenAppBar(context),
-      body: LoginScreenContent(),
-    );
-  }
-
-  AppBar _loginScreenAppBar(BuildContext context) {
-    return AppBar(
-      leading: IconButton(
-        icon: Icon(
-          Icons.arrow_back_ios,
-          color: AppColors.mainColor,
-          size: 30,
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () => Navigator.pop(context),
         ),
-        onPressed: () => Navigator.pop(context),
+        title: Text('Inicio de sesión'),
       ),
-      centerTitle: true,
-      elevation: 0,
-      title: Text(
-        'Inicio de sesión',
-        style: TextStyle(color: AppColors.mainColor),
-      ),
-      backgroundColor: Colors.white,
-      brightness: Brightness.light,
+      body: LoginScreenContent(),
     );
   }
 }

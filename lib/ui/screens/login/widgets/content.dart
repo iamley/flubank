@@ -8,18 +8,18 @@ class LoginScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 100),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _pageTitle(),
-            SizedBox(height: 10),
-            _pageSubtitle(),
-            SizedBox(height: 80),
-            LoginForm(),
-          ],
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              FlutterLogo(size: 80),
+              _pageTitle(),
+              SizedBox(height: 10),
+              _pageSubtitle(),
+              SizedBox(height: 20),
+              LoginForm(),
+            ],
+          ),
         ),
       ),
     );
@@ -27,7 +27,7 @@ class LoginScreenContent extends StatelessWidget {
 
   Text _pageSubtitle() {
     return Text(
-      'Ingresa con tu email o con tus redes sosiales',
+      'Ingresa con tu email o con tus redes sociales',
       textAlign: TextAlign.center,
       style: TextStyle(fontSize: 18),
     );

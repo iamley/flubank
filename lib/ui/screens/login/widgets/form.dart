@@ -14,21 +14,21 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
   final List<String> errors = [];
+  bool checkedValue = false;
 
   @override
   Widget build(BuildContext context) {
-    bool checkedValue = false;
-
     return Form(
       key: _formKey,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           _emailInput(),
-          SizedBox(height: 25),
+          SizedBox(height: 20),
           _passwordInput(),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           FormErrors(errors: errors),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           AppDefaulButton(
             text: 'Ingresar',
             onTap: () {
