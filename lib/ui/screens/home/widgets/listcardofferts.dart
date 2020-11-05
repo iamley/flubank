@@ -68,7 +68,7 @@ class ListCardOfferts extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              items[index].client,
+                              items[index].cliente,
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,

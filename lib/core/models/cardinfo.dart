@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CardInfo {
-  final String client;
+  final String cliente;
   final double saldo;
   final String currency;
   final Color startColor;
   final Color endColor;
 
   CardInfo(
-    this.client,
+    this.cliente,
     this.saldo,
     this.startColor,
     this.endColor,
